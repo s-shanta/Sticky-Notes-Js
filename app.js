@@ -154,7 +154,7 @@ editNote.addEventListener('click',(e)=>{
         editNote.addEventListener('keyup',(e)=>{   
             // editedText = e.target.innerHTML.replace(/\n/g, '\<br>\n');     
             editedText = e.target.innerText;
-            console.log(editedText);
+            // console.log(editedText);
             if(e.target.classList.contains('tc-note-title')){
                 // console.log(`afterkey${window.mainText}`);
                 // console.log(`afterkey${editedText.trim()}`);
@@ -164,8 +164,8 @@ editNote.addEventListener('click',(e)=>{
                 Store.editNotetoStore(e.target,id,editedText);
             }else{
                 const id = e.target.parentElement.firstChild.nextElementSibling.textContent;
-                console.log(id);
-                console.log(editedText);
+                // console.log(id);
+                // console.log(editedText);
                 Store.editNotetoStore(e.target,id,editedText);
             }
         });
